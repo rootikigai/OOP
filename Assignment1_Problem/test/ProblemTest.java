@@ -8,7 +8,7 @@ public class ProblemTest {
         String name = "Semicolon Loan";
         String type = "FINANCIAL";
 
-        Problem problem = new Problem(name, description, type);
+        Problem problem = new Problem(name, type);
 
         assertEquals(name, problem.getName());
         assertEquals(type, problem.getType());
