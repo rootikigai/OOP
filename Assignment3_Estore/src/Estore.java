@@ -1,0 +1,2 @@
+public class Estore {
+}

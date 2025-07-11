@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment1_Problem/Assignment1_Problem.iml" filepath="$PROJECT_DIR$/Assignment1_Problem/Assignment1_Problem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment2_BankApp/Assignment2_BankApp.iml" filepath="$PROJECT_DIR$/Assignment2_BankApp/Assignment2_BankApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment3_Estore/Assignment3_Estore.iml" filepath="$PROJECT_DIR$/Assignment3_Estore/Assignment3_Estore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment4_AirConditioner/Assignment4_AirConditioner.iml" filepath="$PROJECT_DIR$/Assignment4_AirConditioner/Assignment4_AirConditioner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment5_AutomaticBike/Assignment5_AutomaticBike.iml" filepath="$PROJECT_DIR$/Assignment5_AutomaticBike/Assignment5_AutomaticBike.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeoPoliticalZones/GeoPoliticalZones.iml" filepath="$PROJECT_DIR$/GeoPoliticalZones/GeoPoliticalZones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OOP.iml" filepath="$PROJECT_DIR$/.idea/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack_DSA/Stack_DSA.iml" filepath="$PROJECT_DIR$/Stack_DSA/Stack_DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Things_ClassWork/Things_ClassWork.iml" filepath="$PROJECT_DIR$/Things_ClassWork/Things_ClassWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToggleButton/ToggleButton.iml" filepath="$PROJECT_DIR$/ToggleButton/ToggleButton.iml" />
+    </modules>
+  </component>
+</project>
