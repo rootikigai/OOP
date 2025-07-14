@@ -1,4 +1,4 @@
-public class BankAccount extends Bank {
+public class BankAccount {
     private String name;
     private String number;
     private double balance;
@@ -7,6 +7,14 @@ public class BankAccount extends Bank {
         this.name = name;
         this.number = number;
         this.balance = balance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getNumber() {
+        return number;
     }
 
     public double getBalance() {
