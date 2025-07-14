@@ -1,9 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BankAccountTest extends BankTest{
+public class BankAccountTest {
     BankAccount account;
     @BeforeEach
     public void setUp(){
@@ -15,7 +14,7 @@ public class BankAccountTest extends BankTest{
     }
 
     @Test
-    public void tesThatUserCanDeposit(){
+    public void tesThatUserCanDeposit_AndBalanceIncreases(){
         account.deposit(1000);
         assertEquals(6000, account.getBalance());
         account.deposit(2000);
@@ -23,7 +22,7 @@ public class BankAccountTest extends BankTest{
     }
 
     @Test
-    public void testThatUserCanWithdraw(){
+    public void testThatUserCanWithdraw_AndBalanceDecreases(){
         account.withdraw(3000.0);
         assertEquals(2000.0, account.getBalance());
     }
@@ -44,5 +43,11 @@ public class BankAccountTest extends BankTest{
     public void testThatDepositMoneyReflectsInAccount(){
         account.deposit(1000);
         assertEquals(6000, account.getBalance());
+    }
+
+    @Test
+    public void testThatUserCannotDepositNegativeAmount(){
+        account.deposit(-5000);
+        assertEquals(5000, account.getBalance());
     }
 }
