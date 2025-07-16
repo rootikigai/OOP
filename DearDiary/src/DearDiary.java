@@ -10,4 +10,10 @@ public class DearDiary{
         this.isLocked = true;
         this.entries = new java.util.ArrayList<>();
     }
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
+    }
 }
