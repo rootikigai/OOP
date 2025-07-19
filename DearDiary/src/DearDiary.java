@@ -16,4 +16,13 @@ public class DearDiary{
     public String getPassword() {
         return password;
     }
+    public boolean isLocked() {
+        return isLocked;
+    }
+    public void unlockDiary(String password){
+        isLocked = false;
+    }
+    public void lockDiary(){
+        isLocked = true;
+    }
 }
