@@ -13,13 +13,13 @@ A person can delete contact by searching for name or number and deleting
 A person can view all contact
 */
 public class ContactTest {
+    private Contact contact;
     @BeforeEach
     public void setUp(){
-        Contact contact = new Contact("Kelvin", "Ifeanyi", "08035859351");
+        contact = new Contact("Kelvin", "Ifeanyi", "08035859351");
     }
     @Test
     public void testThatContactCanBeCreated() {
-        Contact contact = new Contact("Kelvin", "Ifeanyi", "08035859351");
         assertEquals("Kelvin", contact.getFirstName());
         assertEquals("Ifeanyi", contact.getLastName());
         assertEquals("08035859351", contact.getPhoneNumber());
