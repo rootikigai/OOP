@@ -30,4 +30,10 @@ public class ContactTest {
             new Contact("", "Ifeanyi", "08035859351");
         });
     }
+    @Test
+    public void testThatInvalidPhoneNumberThrowsIllegalArgumentException(){
+        assertThrows(IllegalArgumentException.class, ()-> {
+            new Contact("Kelvin", "Ifeanyi", "08035abc351");
+        });
+    }
 }
