@@ -51,4 +51,10 @@ public class ContactTest {
             contact.setFirstName("");
         });
     }
+    @Test
+    public void testThatInvalidPhoneNumberUpdateThrowsIllegalArgumentException(){
+        assertThrows(IllegalArgumentException.class, ()-> {
+            contact.setPhoneNumber("090abc243!!@");
+        });
+    }
 }
