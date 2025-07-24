@@ -36,4 +36,13 @@ public class ContactTest {
             new Contact("Kelvin", "Ifeanyi", "08035abc351");
         });
     }
+    @Test
+    public void testThatContactDetailsCanBeUpdated() {
+        contact.setFirstName("Kelvin");
+        contact.setLastName("Ifeanyi");
+        contact.setPhoneNumber("08035859351");
+        assertEquals("Kelvin", contact.getFirstName());
+        assertEquals("Ifeanyi", contact.getLastName());
+        assertEquals("08035859351", contact.getPhoneNumber());
+    }
 }
