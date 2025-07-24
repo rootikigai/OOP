@@ -45,4 +45,10 @@ public class ContactTest {
         assertEquals("Ifeanyi", contact.getLastName());
         assertEquals("08035859351", contact.getPhoneNumber());
     }
+    @Test
+    public void testThatInvalidFirstNameUpdateThrowsIllegalArgumentException(){
+        assertThrows(IllegalArgumentException.class, ()-> {
+            contact.setFirstName("");
+        });
+    }
 }
