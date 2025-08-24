@@ -39,16 +39,16 @@ public class DearDiary{
     public int entryCount(){
         return entries.size();
     }
-    public Entry addEntry(String title, String body){
+    public Entry addEntry(String title, String content){
         ensureUnlocked();
-        Entry e = new Entry(nextId++, title, body);
-        entries.add(e);
-        return e;
+        Entry entry = new Entry(nextId++, title, content);
+        entries.add(entry);
+        return entry;
     }
     public Entry getEntryById(int id){
-        for (Entry e: entries){
-            if (e.getId() == id){
-                return e;
+        for (Entry entry: entries){
+            if (entry.getId() == id){
+                return entry;
             }
         }
         return null;
@@ -56,8 +56,8 @@ public class DearDiary{
     public boolean removeEntryById(int id){
         ensureUnlocked();
         for (int index = 0; index < entries.size(); index++){
-            Entry e = entries.get(index);
-            if (e.getId() == id){
+            Entry entry = entries.get(index);
+            if (entry.getId() == id){
                 entries.remove(index);
                 return true;
             }
