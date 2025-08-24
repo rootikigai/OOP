@@ -3,6 +3,7 @@ public class DearDiary{
     private String password;
     private boolean isLocked;
     private java.util.List<Entry> entries;
+    private int nextId = 1;
 
     public DearDiary(String username, String password){
         this.username = username;
@@ -20,7 +21,12 @@ public class DearDiary{
         return isLocked;
     }
     public void unlockDiary(String password){
-        isLocked = false;
+        if (this.password.equals(password)){
+            isLocked = false;
+        }
+        else{
+            throw new SecurityException("Password is Invalid");
+        }
     }
     public void lockDiary(){
         isLocked = true;
