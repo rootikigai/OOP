@@ -31,4 +31,37 @@ public class DearDiary{
     public void lockDiary(){
         isLocked = true;
     }
+    private void ensureUnlocked() {
+        if (isLocked) {
+            throw new IllegalStateException("Diary is Locked");
+        }
+    }
+    public int entryCount(){
+        return entries.size();
+    }
+    public Entry addEntry(String title, String body){
+        ensureUnlocked();
+        Entry e = new Entry(nextId++, title, body);
+        entries.add(e);
+        return e;
+    }
+    public Entry getEntryById(int id){
+        for (Entry e: entries){
+            if (e.getId() == id){
+                return e;
+            }
+        }
+        return null;
+    }
+    public boolean removeEntryById(int id){
+        ensureUnlocked();
+        for (int index = 0; index < entries.size(); index++){
+            Entry e = entries.get(index);
+            if (e.getId() == id){
+                entries.remove(index);
+                return true;
+            }
+        }
+        return false;
+    }
 }
