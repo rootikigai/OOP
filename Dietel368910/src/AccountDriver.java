@@ -1,5 +1,7 @@
 //import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class AccountDriver {
     public static void main(String[] args) {
 //        Scanner input = new Scanner(System.in);
@@ -8,5 +10,12 @@ public class AccountDriver {
 
         System.out.printf("Name for Account1 is: %s\n", myAccount1.getName());
         System.out.printf("Name for Account2 is: %s\n", myAccount2.getName());
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter deposit amount for Account1: ");
+        double depositAmount = input.nextDouble();
+        System.out.printf("%nadding %.2f to account1 balance%n%n", depositAmount);
+        myAccount1.deposit(depositAmount);
     }
 }
