@@ -17,5 +17,7 @@ public class AccountDriver {
         double depositAmount = input.nextDouble();
         System.out.printf("%nadding %.2f to account1 balance%n%n", depositAmount);
         myAccount1.deposit(depositAmount);
+
+        System.out.printf("%s balance: $%.2f%n", myAccount1.getName(), myAccount1.getBalance());
     }
 }
